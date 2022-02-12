@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:padding="20dp"
+    android:background="@drawable/ic_register_bg"
+    android:layout_height="match_parent"
+    tools:context=".SignUpActivity">
+<!--    <TextView-->
+<!--        android:id="@+id/titleLabeltv"-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:text="SignUp"-->
+<!--        style="@style/TextAppearance.MaterialComponents.Headline4"/>-->
+
+<!--    <TextView-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        android:text="Create a new account"-->
+<!--        android:layout_below="@id/titleLabeltv"-->
+<!--        style="@style/TextAppearance.MaterialComponents.Caption"/>-->
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_centerInParent="true"
+        android:layout_above="@id/PasswordSignUp"
+        android:id="@+id/emailSignUp">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/etEmailSignUp"
+            android:hint="Email"
+            android:inputType="textEmailAddress"/>
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:passwordToggleEnabled="true"
+        android:layout_marginBottom="10dp"
+        android:layout_centerInParent="true"
+        android:id="@+id/PasswordSignUp">
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/etPassword"
+            android:hint="Password"
+            android:inputType="textPassword"/>
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <Button
+        android:id="@+id/SignUpBt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Sign Up"
+        android:backgroundTint="#A30B37"
+
+        android:layout_below="@id/PasswordSignUp"
+        android:layout_marginTop="10dp"/>
+
+
+
+
+<!--    <TextView-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:text="@string/don_t_have_an_account_sign_up_now"-->
+<!--        android:layout_alignParentBottom="true"-->
+<!--        android:padding="10dp"-->
+<!--        android:layout_margin="5dp"-->
+<!--        android:layout_centerHorizontal="true"-->
+<!--        style="@style/TextAppearance.MaterialComponents.Caption"/>-->
+
+
+
+
+
+
+</RelativeLayout>
